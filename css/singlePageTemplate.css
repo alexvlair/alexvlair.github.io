@@ -108,17 +108,20 @@ left: 130px;
 .video { 
 	background: #000000;
 	opacity:75%;
-  position: absolute;
   margin-: 100%;
   min-width: 10%; 
-  height: 100%;
   z-index: -6;
-	border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.video video {
+  object-position: 50% 50%;
+  object-fit: none;
 }
 
 .light {
 	font-weight: bold;
-	color: #161616;
+	color: #46505b;
 }
 .tagline {
 	text-align: center;
