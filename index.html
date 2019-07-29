@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+<link href="http://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,36 +60,45 @@ We leverage the power of a cloud-based pipeline to unite artists and studios fro
   <!-- Parallax Section -->
   
   <!-- More Info Section -->
-  <footer width="fit">
-    <h4 class=h4>2D Animation Selected Works</h4>
-	  <div class="horizontal-UNDERline"></div>
-    <article class="footer_column"> <a href="#" data-featherlight="#mylightbox"/> <img src="Images/goodfeeling.jpg" onmouseover="this.src='Images/goodfeeling.gif';" onmouseout="this.src='Images/goodfeeling.jpg';"  width="300" height="200" class="cards"/></a><div id="mylightbox">This is a popup</div>
+  <h4 class=h4>2D Animation Selected Works</h4>
+  <div class="horizontal-UNDERline"></div>
+  <section class="gallery-row">
+    <article class="gallery-column"> 
+      <!-- 
+      There's a couple ways to do this: you can see them here: https://github.com/noelboss/featherlight/#content-filters
+      I'm not totally sure how to do a mix of content and images though, it's a more involved process
+       -->
+      <a href="#" class="cards" data-featherlight="Images/goodfeeling.gif">
+         <!-- This is the rendered to the page -->
+         <img src="Images/goodfeeling.gif" class="cards"/>
+      </a>
       <p></p>
-    </article><article class="footer_column"> <a href="https://vimeo.com/113805731"><img src="Images/woulg_thumbnail.jpg" onmouseover="this.src='Images/woulg.gif';" onmouseout="this.src='Images/woulg_thumbnail.jpg';"  width="300" height="200" class="cards"/></a>
+    </article><article class="gallery-column"> <a href="https://vimeo.com/113805731"><img src="Images/woulg.gif" class="cards"/></a>
       <p></p>
     </article>
-	  <article class="footer_column"> <a href="https://https://vimeo.com/245992513"><img src="Images/google_thumbnail.jpg" onmouseover="this.src='Images/google.gif';" onmouseout="this.src='Images/google_thumbnail.jpg';" width="300" height="200" class="cards"/></a>
+	  <article class="gallery-column"> <a href="https://https://vimeo.com/245992513"><img src="Images/google.gif" class="cards"/></a>
       <p></p>
     </article>
-	  <article class="footer_column"> <a href="http://www.gregdoble.com/animation#/new-york-minute/"> <img src="Images/newyork_thumbnail.jpg" onmouseover="this.src='Images/newyork.gif';" onmouseout="this.src='Images/newyork_thumbnail.jpg';" width="300" height="200" class="cards"/></a>
+	  <article class="gallery-column"> <a href="http://www.gregdoble.com/animation#/new-york-minute/"> <img src="Images/newyork.gif" class="cards"/></a>
       <p></p>
-    </article><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	  <h4 class=h4> 3D Animation Selected Works</h4>
-	   <div class="horizontal-UNDERline"></div>
+    </article>
+  </section>
+  <h4 class=h4> 3D Animation Selected Works</h4>
+  <div class="horizontal-UNDERline"></div>
+  <section class="gallery-row">
 	  
-    <article class="footer_column"> <a href="https://vimeo.com/343313048/debfb37a35"> <img src="Images/vivelatino_thumbnail.jpg" onmouseover="this.src='Images/VivaLatino.gif';" onmouseout="this.src='Images/vivelatino_thumbnail.jpg';" width="300" height="200" class="cards"/></a>
+    <article class="gallery-column"> <a href="https://vimeo.com/343313048/debfb37a35"> <img src="Images/VivaLatino.gif" class="cards"/></a>
       <p></p>
-    </article><article class="footer_column"> <a href="https://www.youtube.com/watch?v=FNptzZGvDLk"> <img src="Images/troll_thumbnail.jpg" onmouseover="this.src='Images/Troll.gif';" onmouseout="this.src='Images/troll_thumbnail.jpg';" width="300" height="200" class="cards"/></a>
-      <p></p>
-    </article>
-	  <article class="footer_column"> <a href="https://vimeo.com/227879890"> <img src="Images/leominor_thumbnail.jpg" onmouseover="this.src='Images/LeoMinor.gif';" onmouseout="this.src='Images/leominor_thumbnail.jpg';" width="300" height="200" class="cards"/></a>
+    </article><article class="gallery-column"> <a href="https://www.youtube.com/watch?v=FNptzZGvDLk"> <img src="Images/Troll.gif" class="cards"/></a>
       <p></p>
     </article>
-	  <article class="footer_column"> <a href="https://vimeo.com/303920425/41d918da67"> <img src="Images/ViventiMori_thumbnail.jpg" onmouseover="this.src='Images/ViventiMori.gif';" onmouseout="this.src='Images/ViventiMori_thumbnail.jpg';" width="300" height="200" class="cards"/></a>
+	  <article class="gallery-column"> <a href="https://vimeo.com/227879890"> <img src="Images/LeoMinor.gif" class="cards"/></a>
       <p></p>
     </article>
-</footer>
+	  <article class="gallery-column"> <a href="https://vimeo.com/303920425/41d918da67"> <img src="Images/ViventiMori.gif"class="cards"/></a>
+      <p></p>
+    </article>
+</section>
 	
   <!-- Footer Section -->
   <section class="footer_banner" id="contact">
@@ -100,7 +109,7 @@ We leverage the power of a cloud-based pipeline to unite artists and studios fro
   <div class="copyright">&copy;2019 - <strong>Amontik Animation</strong></div>
 </div>
 <!-- Main Container Ends -->
-	<script src="//code.jquery.com/jquery-latest.js"></script>
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

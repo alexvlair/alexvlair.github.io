@@ -249,43 +249,37 @@ div.horizontal-line2
     }
 
 /* More info */
-footer {
-	background-color: #FFFFFF;
-	/* [disabled]padding-top: 214px; */
-	width: 90%;
-	padding-bottom: 10%;
-	margin-left: 5%;
-	margin-right: 5%;
-		float:center;
-}
-
 .h4 { 
-text-align: center;
+	text-align: center;
 	font-family: 'Open Sans';
 	color: #585858;
 	font-weight: lighter;
 	font-size:20px;
-	
-	
 }
 
-.footer_column {
-	width: 22.5%;
+section.gallery-row {
+	background-color: #FFFFFF;
+	padding-bottom: 10%;
 	text-align: center;
-	padding-top: 30px;
-	padding-left: 2%;
-	padding-right: 0%;
-	float: left;
 }
-footer .footer_column h3 {
+
+
+.gallery-row .gallery-column h3 {
 	color: #B3B3B3;
 	text-align: center;
 }
-footer .footer_column p {
+.gallery-row  .gallery-column p {
 	color: #717070;
 	background-color: #FFFFFF;
 }
+
 .cards {
+	/*
+		This 100% Is essential to the layout. It allows the images to scale flexibly to the size of their flexed containers, in this case the gallery-column
+		Also keep in mind that I had to remove the fixed `width`/`height` properties from the images them self, that would have also prevented the images
+		from growing/shrinking with their containers
+	 */
+	width: 100%;
 	padding-left: 0px;
 	padding-right: 0px;
 	margin-left: 0px;
@@ -293,7 +287,7 @@ footer .footer_column p {
 	float: center;
 	
 }
-footer .footer_column p {
+.gallery-row .gallery-column p {
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: justify;
@@ -394,10 +388,7 @@ nav ul li {
 .thumbnail {
 	width: 100%;
 }
-.footer_column {
-	width: 100%;
-	margin-top: 0px;
-}
+
 .parallax {
 	text-align: center;
 	margin-top: 0px;
@@ -487,13 +478,7 @@ nav ul li {
 .thumbnail {
 	width: 100%;
 }
-.footer_column {
-	width: 100%;
-	margin-top: 0px;
-		margin-left: 0px;
-	padding-top: 0px;
-	text-align: center;
-}
+
 .parallax {
 	text-align: center;
 	margin-top: 0px;
@@ -545,33 +530,78 @@ nav ul li {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.footer_column {
-	width: 100%;
-}
 }
 
 /* Small Desktops */
 @media ( min-width : 768px ) and (max-width : 1096px ){
-.text_column {
-	width: 100%;
+	body { background-color: red; }
+	.text_column {
+		width: 100%;
+	}
+	
+	article.gallery-column {
+		text-align: center;
+	}
+
+	.thumbnail {
+		width: 50%;
+	}
+	.text_column {
+		width: 100%;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		color: #161616;
+	}
+	.banner {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
 }
-.thumbnail {
-	width: 50%;
+
+
+/*
+	I only use `min-width` @media queries here so that these rules just stack, prevents me from having to repeat same values at each screen size
+ */
+section.gallery-row {
+	display: flex;
+	flex-wrap: wrap;
 }
-.text_column {
-	width: 100%;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	color: #161616;
+
+article.gallery-column {
+	flex: 1 1 100%;
 }
-.banner {
-	margin-top: 0px;
-	padding-top: 0px;
+
+
+/* Small Tablets */
+@media (min-width: 321px){
+	section.gallery-row {
+		flex-wrap: wrap;
+	}
+
+	/* 
+	Allows the items to wrap to a next row, but we can get into weird situations where only one item goes and it blows up to be the whole column width
+	Setting the flex-basis of the columns to 50% forces it to be a 2 x 2 grid in the middle screen sizes.
+	*/
+	article.gallery-column {
+		flex: 0 1 50%; 
+	}
 }
+
+@media ( min-width : 768px ){
+	section.gallery-row {
+		flex-wrap: nowrap;
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	article.gallery-column {
+		flex: 1 1 auto;
+		margin: 0 1vw;
+	}
 }
