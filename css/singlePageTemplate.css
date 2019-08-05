@@ -1,0 +1,627 @@
+@charset "UTF-8";
+/* Body */
+body {
+	font-family: "Julius Sans One";
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+.lightbox { display: none;
+width:1000px;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Container */
+.BGcontainer {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: #161616;
+	z-index: -1;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	margin-left: center;
+	margin-right: auto;
+	top: 100%;
+	background-color: #FFFFFF;
+	z-index: 7;
+}
+
+/* Navigation */
+header {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #000000;
+	z-index: 0;
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 12%;
+	float: left;
+	margin-top: 17px;
+	margin-left: 25px;
+	letter-spacing: 0px;
+}
+nav {
+	float: right;
+	width: 80%;
+	height: 25px;
+	text-align: right;
+	margin-right: 0px;
+	margin-top: 10px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	font: "Julius Sans One";
+	float: left;
+	color: #46505b;
+	font-size: 24px;
+	text-align: right;
+	margin-right: 45px;
+	letter-spacing: 2px;
+	font-weight: ;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #46505b;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #46505b;
+}
+.hero_header {
+	position:absolute;
+	color: #FFFFFF;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 25%;
+width: 100%;
+	float:center;
+	letter-spacing: 4px;
+	z-index: 5;
+
+	
+}
+/* Hero Section */
+
+.center{
+position: absolute;
+}
+.overlay { 
+  position: absolute;
+  top: 0%;
+left: 130px;
+  height: 50%;
+  z-index: -6;
+}
+
+.video { 
+	background: #000000;
+	opacity:75%;
+  margin-: 100%;
+  min-width: 10%; 
+  z-index: -6;
+  border-bottom: 1px solid #000000;
+}
+
+.video video {
+  object-position: 50% 50%;
+  object-fit: none;
+}
+
+.light {
+	font-weight: bold;
+	color: #46505b;
+}
+.tagline {
+	text-align: center;
+	color: #46505b;
+	margin-top: 4px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+/* About Section */
+.text_column {
+	font: "Open Sans";
+	font-size: 18px;
+	width: 80%;
+	text-align: center;
+	font-weight: lighter;
+	line-height: 25px;
+	float: center;
+	margin-left: 10%;
+	color: #2B2B2B;
+}
+.about {
+	position: relative;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #FFFFFF;
+	z-index: 10;
+}
+/* Stats Gallery */
+.stats {
+	color: #717070;
+	margin-bottom: 5px;
+}
+
+.thumbnail {
+	width: 25%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+}
+.gallery .thumbnail h4 {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #000;
+}
+.gallery .thumbnail p {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: #A3A3A3;
+}
+/* Parallax Section */
+.banner {
+	background-color: #000000;
+	background-image: url(../images/parallax.png);
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.parallax {
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 100px;
+	padding-top: 110px;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+.parallax_description {
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 100px;
+	width: 30%;
+	float: right;
+	font-weight: lighter;
+	line-height: 23px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	
+}
+
+    div.horizontal-line
+     
+    {
+    height: 1px; /* Line width */ 
+    background-color: #AFAFAF; /* Line color */ 
+    width: 40%; /* Override in-line if you want specific height. */ 
+    margin-left:30%;
+		margin-top:6%;
+		
+	 /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+     
+    }
+
+div.horizontal-line2
+     
+    {
+    height: 1px; /* Line width */ 
+    background-color: #AFAFAF; /* Line color */ 
+    width: 50%; /* Override in-line if you want specific height. */ 
+    margin-left:25%;
+		margin-top:1%;
+		margin-bottom:6%;
+	 /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+     
+    }
+
+ div.horizontal-UNDERline
+     
+    {
+    height: 1px; /* Line width */ 
+    background-color: #AFAFAF; /* Line color */ 
+    width: 14%; /* Override in-line if you want specific height. */ 
+    margin-left:43%;
+		margin-top:-1%;
+	margin-bottom: 2%;
+
+	 /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+     
+    }
+
+/* More info */
+.h4 { 
+	text-align: center;
+	font-family: 'Open Sans';
+	color: #585858;
+	font-weight: lighter;
+	font-size:20px;
+}
+
+section.gallery-row {
+	background-color: #FFFFFF;
+	padding-bottom: 5%;
+	text-align: center;
+	margin-bottom: auto;
+	
+	
+}
+
+
+.gallery-row .gallery-column h3 {
+	color: #B3B3B3;
+	text-align: center;
+}
+.gallery-row  .gallery-column p {
+	color: #717070;
+	background-color: #FFFFFF;
+}
+
+.cards {
+	/*
+		This 100% Is essential to the layout. It allows the images to scale flexibly to the size of their flexed containers, in this case the gallery-column
+		Also keep in mind that I had to remove the fixed `width`/`height` properties from the images them self, that would have also prevented the images
+		from growing/shrinking with their containers
+	 */
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	float: center;
+	
+}
+.gallery-row .gallery-column p {
+	
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #FEFEFE;
+	color: #C4C4C4;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #717070;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+	background-image: url(../images/pattern.png);
+	background-repeat: repeat;
+}
+footer {
+	display: inline-block;
+	padding-top: 0px;
+}
+.hidden {
+	display: none;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.container header nav {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	float: none;
+	display: none;
+}
+header nav ul {
+}
+nav ul li {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	text-align: center;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+
+.parallax {
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 40%;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 100%;
+	font-size: 18px;
+}
+.parallax_description {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 90%;
+	margin-top: 25px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 12px;
+	float: none;
+	text-align: center;
+}
+.banner {
+	background-color: #2D9AB7;
+	background-image: none;
+}
+.tagline {
+	margin-top: 20px;
+	line-height: 22px;
+}
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+}
+
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: #043745;
+}
+.container header nav {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	float: none;
+	overflow: auto;
+	display: inline-block;
+	background: #52bad5;
+}
+header nav ul {
+	padding: 0px;
+	float: none;
+}
+nav ul li {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+
+.parallax {
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 40%;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 100%;
+	font-size: 18px;
+}
+.parallax_description {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 30%;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.thumbnail {
+	width: 50%;
+}
+.parallax {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 20%;
+}
+.parallax_description {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	padding-top: 30px;
+}
+.banner {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+}
+
+/* Small Desktops */
+@media ( min-width : 768px ) and (max-width : 1096px ){
+	body { background-color: red; }
+	.text_column {
+		width: 100%;
+	}
+	
+	article.gallery-column {
+		text-align: center;
+	}
+
+	.thumbnail {
+		width: 50%;
+	}
+	.text_column {
+		width: 100%;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		color: #161616;
+	}
+	.banner {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
+}
+
+
+/*
+	I only use `min-width` @media queries here so that these rules just stack, prevents me from having to repeat same values at each screen size
+ */
+section.gallery-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article.gallery-column {
+	flex: 1 1 100%;
+}
+
+
+/* Small Tablets */
+@media (min-width: 321px){
+	section.gallery-row {
+		flex-wrap: wrap;
+	}
+
+	/* 
+	Allows the items to wrap to a next row, but we can get into weird situations where only one item goes and it blows up to be the whole column width
+	Setting the flex-basis of the columns to 50% forces it to be a 2 x 2 grid in the middle screen sizes.
+	*/
+	article.gallery-column {
+		flex: 0 1 50%; 
+	}
+}
+
+@media ( min-width : 768px ){
+	section.gallery-row {
+		flex-wrap: nowrap;
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	article.gallery-column {
+		flex: 1 1 auto;
+		margin: 0 1vw;
+	}
+}
