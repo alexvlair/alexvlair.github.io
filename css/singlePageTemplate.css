@@ -37,20 +37,15 @@ width:1000px;
 }
 
 .container {
-	position: absolute;
 	width: 100%;
 	margin-left: center;
 	margin-right: auto;
-	top: 100%;
 	background-color: #FFFFFF;
-	z-index: 7;
 }
 
 /* Navigation */
 header {
-	position: absolute;
-	width: 100%;
-	top: 0px;
+	overflow: hidden;
 	background-color: #FFFFFF;
 	border-bottom: 1px solid #000000;
 	z-index: 0;
@@ -116,23 +111,17 @@ position: absolute;
 .overlay { 
   position: absolute;
   top: 0%;
-left: 130px;
+	left: 130px;
   height: 50%;
   z-index: -6;
 }
 
 .video { 
-	background: #000000;
-	opacity:75%;
-  margin-: 100%;
-  min-width: 10%; 
-  z-index: -6;
-  border-bottom: 1px solid #000000;
+	background: white;
 }
 
-.video video {
-  object-position: 50% 50%;
-  object-fit: none;
+.video video{ 
+	border-bottom: 1px solid black;
 }
 
 .light {
@@ -554,7 +543,6 @@ nav ul li {
 
 /* Small Desktops */
 @media ( min-width : 768px ) and (max-width : 1096px ){
-	body { background-color: red; }
 	.text_column {
 		width: 100%;
 	}
